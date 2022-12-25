@@ -1,0 +1,84 @@
+Commandline = True
+Login = False
+print()
+
+while Commandline == True:
+    
+    cin = input("Cardinal/: ") # cin is a gloabal variable
+    print()
+    
+    if cin == "login":
+        
+        Commandline = False
+        Login = True
+        print("Welcom to the python port of the Cardinal multi tool")
+        print("1.Login")
+        print("2.Dev Login")
+        print("3.Back")
+        print()
+        
+        cin = input("Cardinal/Login: ")
+        print()
+        
+        while Login == True:
+            
+            if cin == "login":
+                Commandline = False
+                Login = False
+                print()
+                
+                cinuser = input("Enter Username : ")
+                print()
+                
+                if cinuser == "person":
+                    
+                    cinpass = input("Enter Password : ")
+                    print()
+                    
+                    if cinpass == "password":
+                        
+                        print("Welcome Person!")
+                        print("This is all there is for now.")
+                        print("Exiting to commandline.")
+                        print()
+                        Commandline = True
+            
+            elif cin == "dev login":
+                Commandline = False
+                Login = False
+                print()
+                
+                cindevuser = input("Enter Dev Username : ")
+                print()
+                
+                if cindevuser == "JY48572":
+                    
+                    cindevpass = input("Enter Dev Password : ")
+                    print()
+                    
+                    if cindevpass == "11323535892207jY":
+                        
+                        print("Welcome", cindevuser)
+                        print()
+                        print("How may I assist you today.")
+                        print()
+                        Commandline = True
+            
+            elif cin == "back":
+                Commandline = True
+                Login = False
+                
+            else:
+                Login = False
+                Commandline = True
+                print("Error choice not a vailiable, please try again.")
+                print()
+            
+    elif cin == "end" or "exit":
+        Commandline = False
+        
+    else:
+        Commandline = True
+        Login = False
+        print("Error command not availiable, please try again.")
+        print()
