@@ -1,5 +1,11 @@
 Commandline = True
 Login = False
+Account1 = False
+Account1user = "person"
+Account1pass = "password"
+Dev_Account1 = False
+Dev_Account1user = "JY48572"
+Dev_Account1pass = "11323535892207jY"
 print()
 
 while Commandline == True:
@@ -30,18 +36,45 @@ while Commandline == True:
                 cinuser = input("Enter Username : ")
                 print()
                 
-                if cinuser == "person":
+                if cinuser == Account1user:
                     
                     cinpass = input("Enter Password : ")
                     print()
                     
-                    if cinpass == "password":
+                    if cinpass == Account1pass:
+                        Account1 = True
                         
-                        print("Welcome Person!")
-                        print("This is all there is for now.")
+                        while Account1 == True:
+                            
+                            print("Welcome Person!")
+                            print("This is all there is for now.")
+                            print()
+                            print("1.Logout")
+                            print()
+                        
+                            cin = input("Cardinal/Pesron/: ")
+                            print()
+                        
+                            if cin == "logout":
+                                Account1 = False
+                                Commandline = True
+                                
+                            else:
+                                print("Error choice not availiable.")
+                                print()
+                                Account1 = True
+                                
+                    else:
+                        print("Wrong password please try again.")
                         print("Exiting to commandline.")
                         print()
                         Commandline = True
+            
+                else:
+                    print("Wrong username try again.")
+                    print("Exiting to commandline")
+                    print()
+                    Commandline = True
             
             elif cin == "dev login":
                 Commandline = False
@@ -51,14 +84,14 @@ while Commandline == True:
                 cindevuser = input("Enter Dev Username : ")
                 print()
                 
-                if cindevuser == "JY48572":
+                if cindevuser == Dev_Account1user:
                     
                     cindevpass = input("Enter Dev Password : ")
                     print()
                     
-                    if cindevpass == "11323535892207jY":
+                    if cindevpass == Dev_Account1pass:
                         
-                        print("Welcome", cindevuser)
+                        print("Welcome", Dev_Account1user)
                         print()
                         print("How may I assist you today.")
                         print()
