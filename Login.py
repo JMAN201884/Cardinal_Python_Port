@@ -197,24 +197,24 @@ while Commandline == True:
                                 cin = input("Cardinal/Dev/User/: ")
                                 print()
 
-                      if cin == "change dev user":
+                                if cin == "change dev user":
 
-                        Dev_Account = False
+                                    Dev_Account = False
 
-                        cindu = input("Enter current dev username : ")
-                        print()
+                                    cindu = input("Enter current dev username : ")
+                                    print()
 
-                        if cindu == Dev_User:
+                                    if cindu == Dev_User:
 
-                          cinndu = input("Enter new username : ")
-                          print()
+                                        cinndu = input("Enter new username : ")
+                                        print()
 
-                          print()
-                          print("WARNING!!")
-                          print()
-                          print("Note that this new username is temporary.")
-                          print("It will default to JY48572 uppon restart")
-                          print()
+                                        print()
+                                        print("WARNING!!")
+                                        print()
+                                        print("Note that this new username is temporary.")
+                                        print("It will default to JY48572 uppon restart")
+                                        print()
 
                           Dev_Confirm = True
 
