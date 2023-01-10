@@ -152,50 +152,50 @@ while Commandline == True:
                             
                             Account_Login = True
 
-                else:
+                    else:
                         
-                  print("Error wrong username. Please try again.")
-                  print()
+                        print("Error wrong username. Please try again.")
+                        print()
                         
-                  Account_Login = True
+                        Account_Login = True
 
             elif cin == "dev login":
 
-              Login = False
-              Dev_Login = True
+                Login = False
+                Dev_Login = True
 
-              while Dev_Login == True:
+                while Dev_Login == True:
 
-                cindu = input("Enter dev username : ")
-                print()
+                    cindu = input("Enter dev username : ")
+                    print()
 
-                if cindu == Dev_User:
+                    if cindu == Dev_User:
 
-                  cindp = input("Enter dev password : ")
-                  print()
+                        cindp = input("Enter dev password : ")
+                        print()
 
-                  if cindp == Dev_Pass:
+                        if cindp == Dev_Pass:
               
-                    Dev_Login = False
-                    Dev_Account = True
+                            Dev_Login = False
+                            Dev_Account = True
 
-                    while Dev_Account == True:
+                            while Dev_Account == True:
 
-                      print("Welcome", Dev_User)
-                      print("How may I assit you today")
-                      print()
-                      print()
-                      print("1.Change Dev Username")
-                      print("2.Change Dev Password")
-                      print("3.Change General Username")
-                      print("4.Change General Password")
-                      print("5.Switch Accounts")
-                      print("6.Logout")
-                      print("7.Log Off")
-                      print()
+                                print("Welcome", Dev_User)
+                                print("How may I assit you today")
+                                print()
+                                print()
+                                print("1.Change Dev Username")
+                                print("2.Change Dev Password")
+                                print("3.Change General Username")
+                                print("4.Change General Password")
+                                print("5.Switch Accounts")
+                                print("6.Logout")
+                                print("7.Log Off")
+                                print()
 
-                      cin = input("Cardinal/Dev/User/: ")
-                      print()
+                                cin = input("Cardinal/Dev/User/: ")
+                                print()
 
                       if cin == "change dev user":
 
