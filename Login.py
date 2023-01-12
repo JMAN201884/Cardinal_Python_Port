@@ -216,89 +216,89 @@ while Commandline == True:
                                         print("It will default to JY48572 uppon restart")
                                         print()
 
-                          Dev_Confirm = True
+                                        Dev_Confirm = True
 
-                          while Dev_Confirm == True:
+                                        while Dev_Confirm == True:
 
-                            Dev_Confirm_User = True
+                                            Dev_Confirm_User = True
 
-                            while Dev_Confirm_User == True:
+                                            while Dev_Confirm_User == True:
 
-                              Dev_Confirm = False
+                                                Dev_Confirm = False
 
-                              cin = input("Are you sure you want to continue Y/N : ")
-                              print()
+                                                cin = input("Are you sure you want to continue Y/N : ")
+                                                print()
                     
-                              if cin == "Y":
+                                                if cin == "Y":
 
-                                Dev_User = cinndu
+                                                    Dev_User = cinndu
 
-                                print("New username saved")
-                                print()
+                                                    print("New username saved")
+                                                    print()
 
-                                Dev_Confirm_User = False
-                                Dev_Account = True
+                                                    Dev_Confirm_User = False
+                                                    Dev_Account = True
 
-                              elif cin == "N":
+                                                elif cin == "N":
 
-                                Dev_User = Dev_User
+                                                    Dev_User = Dev_User
 
-                                print("New username not saved")
-                                print()
-                                print("Aborting")
-                                print()
+                                                    print("New username not saved")
+                                                    print()
+                                                    print("Aborting")
+                                                    print()
 
-                                Dev_Confirm_User = False
-                                Dev_Account = True
+                                                    Dev_Confirm_User = False
+                                                    Dev_Account = True
 
-                              else:
+                                                else:
 
-                                print("Error, please try again")
-                                print()
+                                                    print("Error, please try again")
+                                                    print()
 
-                                Dev_Confirm_User = True
+                                                    Dev_Confirm_User = True
 
-                      elif cin == "change dev pass":
+                                elif cin == "change dev pass":
 
-                        Dev_Account = False
+                                    Dev_Account = False
 
-                        cindp = input("Enter current dav password : ")
-                        print()
+                                    cindp = input("Enter current dav password : ")
+                                    print()
 
-                        if cindp == Dev_Pass:
+                                    if cindp == Dev_Pass:
 
-                          cinndp = input("Enter new dev password : ")
-                          print()
+                                        cinndp = input("Enter new dev password : ")
+                                        print()
 
-                          print()
-                          print("WARNING!!")
-                          print()
-                          print("Note that this new password is temporary")
-                          print("It will default to 11323535892207jY uppon restart")
-                          print()
+                                        print()
+                                        print("WARNING!!")
+                                        print()
+                                        print("Note that this new password is temporary")
+                                        print("It will default to 11323535892207jY uppon restart")
+                                        print()
 
-                          Dev_Confirm = True
+                                        Dev_Confirm = True
 
-                          while Dev_Confirm == True:
+                                        while Dev_Confirm == True:
 
-                            Dev_Confirm_Pass = True
+                                            Dev_Confirm_Pass = True
 
-                            while Dev_Confirm_Pass == True:
+                                            while Dev_Confirm_Pass == True:
 
-                              Dev_Confirm = False
+                                                Dev_Confirm = False
 
-                              cin = input("Are you sure you want to continue Y/N : ")
-                              print()
+                                                cin = input("Are you sure you want to continue Y/N : ")
+                                                print()
 
-                              if cin == "Y":
+                                                if cin == "Y":
 
-                                Dev_Pass = cinndp
+                                                    Dev_Pass = cinndp
 
-                                print("New username saved")
-                                print()
+                                                    print("New username saved")
+                                                    print()
 
-                                Dev_Confirm_Pass = False
-                                Dev_Account = True
+                                                    Dev_Confirm_Pass = False
+                                                    Dev_Account = True
 
                               elif cin == "N":
 
