@@ -241,8 +241,6 @@ while Commandline == True:
 
                                                 elif cin == "N":
 
-                                                    Dev_User = Dev_User
-
                                                     print("New username not saved")
                                                     print()
                                                     print("Aborting")
@@ -300,93 +298,93 @@ while Commandline == True:
                                                     Dev_Confirm_Pass = False
                                                     Dev_Account = True
 
-                              elif cin == "N":
+                                                elif cin == "N":
 
-                                print("New username not saved")
-                                print()
-                                print("Aborting")
-                                print()
+                                                    print("New username not saved")
+                                                    print()
+                                                    print("Aborting")
+                                                    print()
 
-                                Dev_Confirm_Pass = False
-                                Dev_Account = True
+                                                    Dev_Confirm_Pass = False
+                                                    Dev_Account = True
 
-                              else:
+                                                else:
 
-                                print("Error please try again")
-                                print()
+                                                    print("Error please try again")
+                                                    print()
 
-                                Dev_Confirm_Pass = True
+                                                    Dev_Confirm_Pass = True
 
-                      elif cin == "change gen user":
+                                elif cin == "change gen user":
 
-                        Dev_Account = False
+                                    Dev_Account = False
 
-                        cinnu = input("Enter new general username : ")
-                        print()
+                                    cinnu = input("Enter new general username : ")
+                                    print()
 
                   
 
-                      elif cin == "logout":
+                                elif cin == "logout":
 
-                        Dev_Account = False
-                        Commandline = True
+                                    Dev_Account = False
+                                    Commandline = True
 
-                      elif cin == "log off":
+                                elif cin == "log off":
 
-                        print("Cardinal is closing")
-                        print()
-                        print("Good Bye")
-                        print()
+                                    print("Cardinal is closing")
+                                    print()
+                                    print("Good Bye")
+                                    print()
 
-                    Commandline = False
-                    Login = False
-                    Account_Login = False
-                    Account = False
-                    Dev_Login = False
-                    Dev_Account = False
-                    Dev_Comfirm = False
-                    Dev_Confirm_User = False
-                    Dev_Confirm_Pass = False
+                                    Commandline = False
+                                    Login = False
+                                    Account_Login = False
+                                    Account = False
+                                    Dev_Login = False
+                                    Dev_Account = False
+                                    Dev_Comfirm = False
+                                    Dev_Confirm_User = False
+                                    Dev_Confirm_Pass = False
                   
-                  else:
+                        else:
 
-                    print("Error wrong dev password. Please try again.")
-                    print()
-                    print("Exiting to login.")
-                    print()
+                            print("Error wrong dev password. Please try again.")
+                            print()
+                            print("Exiting to login.")
+                            print()
 
-                    Dev_Login = False
-                    Login = True
+                            Dev_Login = False
+                            Login = True
             
-                else:
+                    else:
 
-                  print("Error wrong dev userneame. PLease try again.")
-                  print()
-                  print("Exiting to login.")
-                  print()
+                        print("Error wrong dev userneame. PLease try again.")
+                        print()
+                        print("Exiting to login.")
+                        print()
 
-                  Dev_Login = False
-                  Login = True
+                        Dev_Login = False
+                        Login = True
 
             elif cin == "back":
 
-              print("Exiting to commandline.")
-              print()
+                print("Exiting to commandline.")
+                print()
                 
-              Login = False
-              Commandline = True
+                Login = False
+                Commandline = True
 
             else:
 
-              print("Choice not availiable. Please try again")
-              print()
+                print("Choice not availiable. Please try again")
+                print()
                 
-              login = False
-              Commandline = True
+                login = False
+                Commandline = True
 
-        else:
+    else:
 
-          print("Command not availiable. Please try again")
-          print()
+        print("Command not availiable. Please try again")
+        print()
         
-          Commandline = True
+        Commandline = True
