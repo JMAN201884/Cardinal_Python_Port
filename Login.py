@@ -14,8 +14,8 @@ Dev_Confirm_Pass = False
 
 Account_User = "Person"
 Account_Pass = "Password"
-Dev_User = "JY48572"
-Dev_Pass = "11323535892207jY"
+Dev_User = "Jon"
+Dev_Pass = "Testing"
 
 print()
 
@@ -187,11 +187,9 @@ while Commandline == True:
                                 print()
                                 print("1.Change Dev Username")
                                 print("2.Change Dev Password")
-                                print("3.Change General Username")
-                                print("4.Change General Password")
-                                print("5.Switch Accounts")
-                                print("6.Logout")
-                                print("7.Log Off")
+                                print("3.Switch Accounts")
+                                print("4.Logout")
+                                print("5.Log Off")
                                 print()
 
                                 cin = input("Cardinal/Dev/User/: ")
@@ -314,52 +312,7 @@ while Commandline == True:
                                                     print()
 
                                                     Dev_Confirm_Pass = True
-
-                                elif cin == "change gen user":
-
-                                    Dev_Account = False
-
-                                    cinnu = input("Enter new general username : ")
-                                    print()
-                                    
-                                    Dev_Confirm = True
-                                    
-                                    while Dev_Confirm == True:
-                                      
-                                        Dev_Comfirm = False
-                                      
-                                        cin = input("Enter Dev password : ")
-                                        print()
-                                      
-                                        if cin == Dev_Pass:
-                                        
-                                            print("New general username saved")
-                                            print()
-                                            print("Please note that this is only temporarry until restart.")
-                                            print("The username will default to", Account_User, "upon restart")
-                                            print()
-                                            
-                                            Dev_Comfirm = False
-                                            Dev_Account = True
-                                            
-                                        elif cin != Dev_Pass:
-                                          
-                                            print("New username not saved.")
-                                            print()
-                                            print("Aborting")
-                                            print()
-
-                                            Dev_Comfirm = False
-                                            Dev_Account = True
-                                          
-                                        else:
-                                          
-                                            print("Please try again.")
-                                            print()
-                                          
-                                            Dev_Comfirm = True
-                                          
-                                          
+                                                    
                                 elif cin == "switch users":
                                   
                                     Dev_Account = False
