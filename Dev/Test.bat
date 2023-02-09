@@ -1,3 +1,3 @@
 @echo off
-"C:\Documents\GitHub\Cardinal_Python_Port\Run.bat"
+"C:\Users\Ichigo\Documents\GitHub\Cardinal_Python_Port\Run.bat"
 pause
