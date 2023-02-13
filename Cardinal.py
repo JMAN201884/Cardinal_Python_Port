@@ -18,10 +18,49 @@ def Change_User():
 def Change_Pass():
     print()
     
+def Switch_Users():
+    
+    Account = False
+    Login = True
+
+def Logout():
+    
+    Account = False
+    Commandline = True
+    
 def Admin_Account_F():
     print()
 
-
+def Change_Dev_User():
+    print()
+    
+def Change_Dev_Pass():
+    print()
+    
+def Change_Gen_User():
+    print()
+    
+def Change_Gen_Pass():
+    print()
+    
+def Logout_Admin():
+    
+    Admin_Account = False
+    Commandline = True
+    
+def Exit():
+    
+    Commandline = True
+    Login = False
+    Account_Login = False
+    Account = False
+    Admin_Login = False
+    Admin_Account = False
+    Admin_Confirm = False
+    Admin_Confirm_User = False
+    Admin_Confirm_Gen_User = False
+    Admin_Confirm_Pass = False
+    Admin_Confirm_Gen_Pass = False
 
 # Switching Variables
 
