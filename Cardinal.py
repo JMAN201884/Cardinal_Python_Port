@@ -1,6 +1,7 @@
 # Functions
 
 def Login_F():
+    print("Hello World")
     print()
     
 def Account_Login_F():
@@ -93,3 +94,33 @@ Admin_User = "Admin"
 Admin_Pass = "Testing"
 
 print()
+
+while Commandline == True:
+    
+    cin = input("Cardinal/:")
+    print()
+    
+    if cin == "login":
+        
+        Login = True
+        
+        Login_F()
+        
+    elif cin == "help":
+        
+        print("Hello World")
+        print()
+        
+    elif cin == "exit":
+        
+        Commandline = False
+        Login = False
+        Account_Login = False
+        Account = False
+        Admin_Login = False
+        Admin_Account = False
+        Admin_Confirm = False
+        Admin_Confirm_User = False
+        Admin_Confirm_Gen_User = False
+        Admin_Confirm_Pass = False
+        Admin_Confirm_Gen_Pass = False
