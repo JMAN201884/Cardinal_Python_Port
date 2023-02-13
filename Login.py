@@ -376,6 +376,10 @@ while Commandline == True:
                 login = False
                 Commandline = True
 
+    elif cin == "exit":
+        
+        Commandline = False
+    
     else:
 
         print("Command not availiable. Please try again")
