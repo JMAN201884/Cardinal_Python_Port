@@ -1,9 +1,55 @@
+# # Switching Variables
+
+# Commandline = True
+# Login_V = False
+# Account_Login_V = False
+# Account_V = False
+# Admin_Login_V = False
+# Admin_Account_V = False
+# Admin_Confirm = False
+# Admin_Confirm_User = False
+# Admin_Confirm_Gen_User = False
+# Admin_Confirm_Pass = False
+# Admin_Confirm_Gen_Pass = False
+
 # Functions
 
-def Login_F():
-    print("Hello World")
-    print()
+def Login_Function():
     
+    if Login_V == True:
+        
+        while Login_V == True:
+            
+            print("Welcome to Cardinal Python port.")
+            print("There will be limited featurs due to the language.")
+            print()
+            print()
+            print("1.Guest Login")
+            print("2.Admin Login")
+            print("3.Back")
+            print()
+            
+            cin = input("Cardinal/Login/:")
+            print()
+            
+            if cin == "guest login":
+                
+                Login_V = False
+                Account_Login = True
+                
+                Account_Login_F()
+                
+            elif cin == "admin login":
+                
+                Login_V = False
+                Admin_Login = True
+                
+                Admin_Login_F()
+                
+            elif cin == "back":
+                
+                Login_V = False
+                
 def Account_Login_F():
     print()
     
@@ -51,26 +97,26 @@ def Logout_Admin():
     
 def Exit():
     
-    Commandline = True
-    Login = False
-    Account_Login = False
-    Account = False
-    Admin_Login = False
-    Admin_Account = False
-    Admin_Confirm = False
-    Admin_Confirm_User = False
-    Admin_Confirm_Gen_User = False
-    Admin_Confirm_Pass = False
-    Admin_Confirm_Gen_Pass = False
+        Commandline = False
+        Login = False
+        Account_Login = False
+        Account = False
+        Admin_Login = False
+        Admin_Account = False
+        Admin_Confirm = False
+        Admin_Confirm_User = False
+        Admin_Confirm_Gen_User = False
+        Admin_Confirm_Pass = False
+        Admin_Confirm_Gen_Pass = False
 
 # Switching Variables
 
 Commandline = True
-Login = False
-Account_Login = False
-Account = False
-Admin_Login = False
-Admin_Account = False
+Login_V = False
+Account_Login_V = False
+Account_V = False
+Admin_Login_V = False
+Admin_Account_V = False
 Admin_Confirm = False
 Admin_Confirm_User = False
 Admin_Confirm_Gen_User = False
@@ -102,9 +148,11 @@ while Commandline == True:
     
     if cin == "login":
         
-        Login = True
+        #Login_V = True
         
-        Login_F()
+        Login_Function()
+        
+        Login_V = True
         
     elif cin == "help":
         
@@ -114,11 +162,11 @@ while Commandline == True:
     elif cin == "exit":
         
         Commandline = False
-        Login = False
-        Account_Login = False
-        Account = False
-        Admin_Login = False
-        Admin_Account = False
+        Login_V = False
+        Account_Login_V = False
+        Account_V = False
+        Admin_Login_V = False
+        Admin_Account_V = False
         Admin_Confirm = False
         Admin_Confirm_User = False
         Admin_Confirm_Gen_User = False
