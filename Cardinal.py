@@ -3,43 +3,42 @@
 def Login_Function():
     
     Login_V = True
-    
-    if Login_V == True:
         
-        while Login_V == True:
+    while Login_V == True:
             
-            print("Welcome to Cardinal Python port.")
-            print("There will be limited featurs due to the language.")
-            print()
-            print()
-            print("1.Guest Login")
-            print("2.Admin Login")
-            print("3.Back")
-            print()
+        print("Welcome to Cardinal Python port.")
+        print("There will be limited featurs due to the language.")
+        print()
+        print()
+        print("1.Guest Login")
+        print("2.Admin Login")
+        print("3.Back")
+        print()
             
-            cin = input("Cardinal/Login/:")
-            print()
+        cin = input("Cardinal/Login/:")
+        print()
             
-            if cin == "guest login":
+        if cin == "guest login":
                 
-                Login_V = False
-                Account_Login = True
+            Login_V = False
                 
-                Account_Login_F()
+            Account_Login_F()
                 
-            elif cin == "admin login":
+        elif cin == "admin login":
                 
-                Login_V = False
-                Admin_Login = True
+            Login_V = False
                 
-                Admin_Login_F()
+            Admin_Login_F()
                 
-            elif cin == "back":
+        elif cin == "back":
                 
-                Login_V = False
+            Login_V = False
                 
 def Account_Login_F():
-    print()
+    
+    Account_Login_V = True
+    
+    
     
 def Admin_Login_F():
     print()
