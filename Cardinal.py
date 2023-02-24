@@ -65,7 +65,8 @@ def Account_Login_F():
             print()
     
 def Admin_Login_F():
-    print()
+    
+    Admin_Login_V = True
 
 def Account_F():
     print()
