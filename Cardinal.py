@@ -16,6 +16,8 @@
 
 def Login_Function():
     
+    Login_V = True
+    
     if Login_V == True:
         
         while Login_V == True:
