@@ -1,17 +1,3 @@
-# # Switching Variables
-
-# Commandline = True
-# Login_V = False
-# Account_Login_V = False
-# Account_V = False
-# Admin_Login_V = False
-# Admin_Account_V = False
-# Admin_Confirm = False
-# Admin_Confirm_User = False
-# Admin_Confirm_Gen_User = False
-# Admin_Confirm_Pass = False
-# Admin_Confirm_Gen_Pass = False
-
 # Functions
 
 def Login_Function():
@@ -150,11 +136,7 @@ while Commandline == True:
     
     if cin == "login":
         
-        #Login_V = True
-        
         Login_Function()
-        
-        Login_V = True
         
     elif cin == "help":
         
