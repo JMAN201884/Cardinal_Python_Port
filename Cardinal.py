@@ -48,6 +48,12 @@ def Account_Login_F():
             cinp = input("Enter the password : ")
             print()
             
+            if cinp == Account_Pass:
+                
+                Account_Login_V = False
+                
+                Account_F()
+            
         else:
             
             print("Error wrong username. Please try again.")
