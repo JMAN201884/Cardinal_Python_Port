@@ -67,6 +67,33 @@ def Account_Login_F():
 def Admin_Login_F():
     
     Admin_Login_V = True
+    
+    while Admin_Login_V == True:
+        
+        cindu = input("Enter the username : ")
+        print()
+        
+        if cindu == Admin_User:
+            
+            cindp = input("Enter the password : ")
+            print()
+            
+            if cindp == Admin_Pass:
+                
+                Admin_Login_V = False
+                
+                Admin_Account_F()
+            
+            else:
+                
+                print("Error wrong password. Please try agin")
+                print()
+                
+        else:
+            
+            print("Error wrong username. Please try again.")
+            print()
+            
 
 def Account_F():
     print()
