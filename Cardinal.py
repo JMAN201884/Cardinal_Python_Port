@@ -107,12 +107,7 @@ def Switch_Users():
     
     Account = False
     Login = True
-
-def Logout():
-    
-    Account = False
-    Commandline = True
-    
+   
 def Admin_Account_F():
     print()
 
@@ -128,9 +123,10 @@ def Change_Gen_User():
 def Change_Gen_Pass():
     print()
     
-def Logout_Admin():
+def Logout():
     
-    Admin_Account = False
+    Admin_Account_V = False
+    Account_V = False
     Commandline = True
     
 def Exit():
