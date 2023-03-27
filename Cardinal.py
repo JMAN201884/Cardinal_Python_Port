@@ -103,7 +103,70 @@ def Account_F():
         print("Welcom", Account_User)
         print()
         print()
-    
+        print("1.Calculator")
+        print("2.Change Username")
+        print("3.Change Password")
+        print("4.Logput")
+        print("5.Exit")
+        print()
+        
+        cin = input("Cardinal/Guest/: ")
+        print()
+        
+        if cin == "calculator":
+            
+            Account_V = False
+            
+            Calculator()
+            
+        elif cin == "change user":
+            
+            Account_V = False
+            
+            Change_User()
+            
+        elif cin == "chang pass":
+            
+            Account_V = False
+            
+            Change_Pass()
+            
+        elif cin == "logout":
+            
+            Admin_Account_V = False
+            Account_V = False
+            Commandline = True
+            
+        elif cin == "exit":
+            
+            Confirm = True
+            Account_V = False
+            
+            while Confirm == True:
+                
+                print("Are you sure you want to exit.")
+                print("Any altered information may reset uppon restart of program.")
+                print()
+            
+                cin = input("Y or N : ")
+                print()
+            
+                if cin == "Y":
+                
+                    Confirm = False
+                    
+                    Exit()
+                    
+                elif cin == "N":
+                    
+                    Confirm = False
+                    
+                    Account_F()
+                    
+                else:
+                    
+                    Confirm = True
+
 def Change_User():
     print()
     
@@ -166,6 +229,7 @@ Admin_Confirm_User = False
 Admin_Confirm_Gen_User = False
 Admin_Confirm_Pass = False
 Admin_Confirm_Gen_Pass = False
+Confirm = False
 
 # Variables
 
@@ -178,7 +242,7 @@ z_number = 0
 
 # Account Info
 
-Account_User = "Person"
+Account_User = "Guest"
 Account_Pass = "Password"
 Admin_User = "Admin"
 Admin_Pass = "Testing"
