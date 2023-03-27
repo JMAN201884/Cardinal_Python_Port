@@ -33,7 +33,7 @@ def Login_Function():
         elif cin == "back":
                 
             Login_V = False
-                
+
 def Account_Login_F():
     
     Account_Login_V = True
@@ -63,7 +63,7 @@ def Account_Login_F():
             
             print("Error wrong username. Please try again.")
             print()
-    
+
 def Admin_Login_F():
     
     Admin_Login_V = True
@@ -93,7 +93,7 @@ def Admin_Login_F():
             
             print("Error wrong username. Please try again.")
             print()
-            
+
 def Account_F():
     
     Account_V = True
@@ -110,7 +110,7 @@ def Account_F():
         print("5.Exit")
         print()
         
-        cin = input("Cardinal/Guest/: ")
+        cin = input("Cardinal/Guest/:")
         print()
         
         if cin == "calculator":
@@ -178,30 +178,49 @@ def Account_F():
 
 def Change_User():
     print()
-    
+
 def Change_Pass():
     print()
-    
+
 def Switch_Users():
     
     Account = False
     Login = True
-   
+
 def Admin_Account_F():
+    
+    Admin_Account_V = True
+    
+    print("Welcome", Admin_User)
+    print()
+    print()
+    print("1.Change Dev Username")
+    print("2.Change Dev Password")
+    print("3.Change Gen User")
+    print("4.Change Gen Pass")
+    print("5.Switch Accounts")
+    print("6.Logout")
+    print("7.Exit")
+    print()
+    
+    cin = input("Cardinal/Admin/:")
     print()
 
 def Change_Dev_User():
     print()
-    
+
 def Change_Dev_Pass():
     print()
     
 def Change_Gen_User():
     print()
-    
+
 def Change_Gen_Pass():
     print()
-    
+ 
+def Calculator():
+    print()
+
 def Logout():
     
     Admin_Account_V = False
@@ -222,9 +241,6 @@ def Exit():
         Admin_Confirm_Pass = False
         Admin_Confirm_Gen_Pass = False
         Confirm = False
-
-def Calculator():
-    print()
 
 # Switching Variables
 
