@@ -95,7 +95,14 @@ def Admin_Login_F():
             print()
             
 def Account_F():
-    print()
+    
+    Account_V = True
+    
+    while Account_V == True:
+        
+        print("Welcom", Account_User)
+        print()
+        print()
     
 def Change_User():
     print()
@@ -142,6 +149,9 @@ def Exit():
         Admin_Confirm_Gen_User = False
         Admin_Confirm_Pass = False
         Admin_Confirm_Gen_Pass = False
+
+def Calculator():
+    print()
 
 # Switching Variables
 
