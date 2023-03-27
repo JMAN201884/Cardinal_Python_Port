@@ -171,10 +171,6 @@ def Account_F():
                     Confirm = False
                     
                     Account_F()
-                    
-                else:
-                    
-                    Confirm = True
 
 def Change_User():
     print()
@@ -191,20 +187,84 @@ def Admin_Account_F():
     
     Admin_Account_V = True
     
-    print("Welcome", Admin_User)
-    print()
-    print()
-    print("1.Change Dev Username")
-    print("2.Change Dev Password")
-    print("3.Change Gen User")
-    print("4.Change Gen Pass")
-    print("5.Switch Accounts")
-    print("6.Logout")
-    print("7.Exit")
-    print()
+    while Admin_Account_V == True:
+        print("Welcome", Admin_User)
+        print()
+        print()
+        print("1.Change Dev Username")
+        print("2.Change Dev Password")
+        print("3.Change Gen User")
+        print("4.Change Gen Pass")
+        print("5.Switch Accounts")
+        print("6.Logout")
+        print("7.Exit")
+        print()
     
-    cin = input("Cardinal/Admin/:")
-    print()
+        cin = input("Cardinal/Admin/:")
+        print()
+    
+        if cin == "change dev user":
+        
+            Admin_Account_V = False
+        
+            Change_Dev_User()
+    
+        elif cin == "change dev pass":
+        
+            Admin_Account_V = False
+        
+            Change_Dev_Pass()
+        
+        elif cin == "change gen user":
+        
+            Admin_Account_V = False
+        
+            Change_Gen_User()
+        
+        elif cin == "change gen pass":
+        
+            Admin_Account_V = False
+        
+            Change_Gen_Pass()
+    
+        elif cin == "logout":
+        
+            Logout()
+        
+        elif cin == "exit":
+             
+            Confirm = True
+            Admin_Account_V = False
+            
+            while Confirm == True:
+                
+                print("Are you sure you want to exit.")
+                print("Any altered information may reset uppon restart of program.")
+                print()
+            
+                cin = input("Y or N : ")
+                print()
+            
+                if cin == "Y":
+                    
+                    Commandline = False
+                    Login_V = False
+                    Account_Login_V = False
+                    Account_V = False
+                    Admin_Login_V = False
+                    Admin_Account_V = False
+                    Admin_Confirm = False
+                    Admin_Confirm_User = False
+                    Admin_Confirm_Gen_User = False
+                    Admin_Confirm_Pass = False
+                    Admin_Confirm_Gen_Pass = False
+                    Confirm = False
+                    
+                elif cin == "N":
+                    
+                    Confirm = False
+                
+                    Admin_Account_F()
 
 def Change_Dev_User():
     print()
