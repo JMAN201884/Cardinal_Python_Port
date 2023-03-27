@@ -152,10 +152,19 @@ def Account_F():
                 print()
             
                 if cin == "Y":
-                
-                    Confirm = False
                     
-                    Exit()
+                    Commandline = False
+                    Login_V = False
+                    Account_Login_V = False
+                    Account_V = False
+                    Admin_Login_V = False
+                    Admin_Account_V = False
+                    Admin_Confirm = False
+                    Admin_Confirm_User = False
+                    Admin_Confirm_Gen_User = False
+                    Admin_Confirm_Pass = False
+                    Admin_Confirm_Gen_Pass = False
+                    Confirm = False
                     
                 elif cin == "N":
                     
@@ -212,6 +221,7 @@ def Exit():
         Admin_Confirm_Gen_User = False
         Admin_Confirm_Pass = False
         Admin_Confirm_Gen_Pass = False
+        Confirm = False
 
 def Calculator():
     print()
@@ -276,3 +286,4 @@ while Commandline == True:
         Admin_Confirm_Gen_User = False
         Admin_Confirm_Pass = False
         Admin_Confirm_Gen_Pass = False
+        Confirm = False
