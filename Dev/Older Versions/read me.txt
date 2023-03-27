@@ -1,0 +1,2 @@
+Any older version can only be ran through an IDE software.
+Newer versions will have batch file support or linux/mac equivalent.
