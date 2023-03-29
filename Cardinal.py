@@ -181,7 +181,29 @@ def Change_User():
     
     while Change_Gen_User_V == True:
         
-        cinu = input()
+        cinu = input("Enter current username : ")
+        print()
+        
+        if cinu == Account_User:
+            
+            cinnu = input("Enter new username : ")
+            print()
+            
+            Confirm = True
+            
+            while Confirm == True:
+                
+                cin = input("Are you sure you want to continue. Y/N : ")
+                print()
+                
+                if cin == "Y":
+                    
+                    print("Changes are commited.")
+                    print("Note changes will default upon restart of program.")
+                    
+                    Account_User = global cinnu
+                    
+                
 
 def Change_Pass():
     print()
