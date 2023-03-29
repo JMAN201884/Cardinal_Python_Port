@@ -153,6 +153,9 @@ def Account_F():
             
                 if cin == "Y":
                     
+                    print("Exiting to command line.")
+                    print()
+                    
                     Commandline = False
                     Login_V = False
                     Account_Login_V = False
@@ -173,7 +176,12 @@ def Account_F():
                     Account_F()
 
 def Change_User():
-    print()
+    
+    Change_Gen_User_V = True
+    
+    while Change_Gen_User_V == True:
+        
+        cinu = input()
 
 def Change_Pass():
     print()
@@ -247,6 +255,9 @@ def Admin_Account_F():
             
                 if cin == "Y":
                     
+                    print("Exiting to commandline.")
+                    print()
+                    
                     Commandline = False
                     Login_V = False
                     Account_Login_V = False
@@ -266,10 +277,10 @@ def Admin_Account_F():
                 
                     Admin_Account_F()
 
-def Change_Dev_User():
+def Change_Admin_User():
     print()
 
-def Change_Dev_Pass():
+def Change_Admin_Pass():
     print()
     
 def Change_Gen_User():
@@ -316,6 +327,10 @@ Admin_Confirm_Gen_User = False
 Admin_Confirm_Pass = False
 Admin_Confirm_Gen_Pass = False
 Confirm = False
+Change_Gen_User_V = False
+Change_Gen_Pass_V = False
+Chagne_Admin_User_V = False
+Change_Admin_Pass_V = False
 
 # Variables
 
