@@ -201,8 +201,26 @@ def Change_User():
                     print("Changes are commited.")
                     print("Note changes will default upon restart of program.")
                     
+                    Account_User == cinnu
                     
-                    Account_User = cinnu
+                    Commandline = False
+                    Login_V = False
+                    Account_Login_V = False
+                    Account_V = False
+                    Admin_Login_V = False
+                    Admin_Account_V = False
+                    Admin_Confirm = False
+                    Admin_Confirm_User = False
+                    Admin_Confirm_Gen_User = False
+                    Admin_Confirm_Pass = False
+                    Admin_Confirm_Gen_Pass = False
+                    Confirm = False
+                    Change_Gen_User_V = False
+                    Change_Gen_Pass_V = False
+                    Chagne_Admin_User_V = False
+                    Change_Admin_Pass_V = False
+                    
+                    Account_F()
                     
                 if cin == "N":
                     
@@ -226,9 +244,6 @@ def Change_User():
                     Chagne_Admin_User_V = False
                     Change_Admin_Pass_V = False
                     
-                else:
-                    
-                    print("Error acoured. Please try again.")
 
 def Change_Pass():
     print()
@@ -262,13 +277,13 @@ def Admin_Account_F():
         
             Admin_Account_V = False
         
-            Change_Dev_User()
+            Change_Admin_User()
     
         elif cin == "change dev pass":
         
             Admin_Account_V = False
         
-            Change_Dev_Pass()
+            Change_Admin_Pass()
         
         elif cin == "change gen user":
         
