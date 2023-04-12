@@ -196,7 +196,7 @@ def Change_User():
                 cin = input("Are you sure you want to continue. Y/N : ")
                 print()
                 
-                if cin == "Y":
+                if cin == "y":
                     
                     print("Changes are commited.")
                     print("Note changes will default upon restart of program.")
@@ -222,7 +222,7 @@ def Change_User():
                     
                     Account_F()
                     
-                if cin == "N":
+                if cin == "n":
                     
                     print("New username was not commited.")
                     print("Exiting to command line.")
