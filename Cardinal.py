@@ -190,10 +190,11 @@ def Change_User():
             print()
             
             Confirm = True
+            Change_Gen_User_V = False
             
             while Confirm == True:
                 
-                cin = input("Are you sure you want to continue. Y/N : ")
+                cin = input("Are you sure you want to continue. y/n : ")
                 print()
                 
                 if cin == "y":
@@ -245,7 +246,30 @@ def Change_User():
                     Change_Admin_Pass_V = False
                     
 def Change_Pass():
-    print()
+    
+    Change_Gen_Pass_V = True
+    
+    while Change_Gen_Pass_V == True:
+        
+        cinp = input("Enter current password : ")
+        print()
+        
+        if cinp == Account_Pass:
+            
+            cinnp = input("Enter new password : ")
+            print()
+            
+            Confirm = True
+            Change_Gen_Pass_V = False
+            
+            while Confirm == True:
+                
+                cin = input("Are you sure you want to continue. y/n : ")
+                print()
+                
+                if cin == "y":
+                    
+                    print("Changes were commited.")
 
 def Switch_Users():
     
