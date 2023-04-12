@@ -400,12 +400,12 @@ Change_Admin_Pass_V = False
 
 # Variables
 
-a_number = 0
-b_number = 0
-c_number = 0
-x_number = 0
-y_number = 0
-z_number = 0
+a = 0
+b = 0
+c = 0
+x = 0
+y = 0
+z = 0
 
 # Account Info
 
