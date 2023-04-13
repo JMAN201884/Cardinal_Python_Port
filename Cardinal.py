@@ -200,50 +200,23 @@ def Change_User():
                 if cin == "y":
                     
                     print("Changes are commited.")
-                    print("Note changes will default upon restart of program.")
+                    print("Note uppon program restart, the username will reset to : Guest.")
                     
-                    Account_User == cinnu
+                    global Account_New_User
+                    Account_New_User = cinnu
                     
-                    Commandline = False
-                    Login_V = False
-                    Account_Login_V = False
-                    Account_V = False
-                    Admin_Login_V = False
-                    Admin_Account_V = False
-                    Admin_Confirm = False
-                    Admin_Confirm_User = False
-                    Admin_Confirm_Gen_User = False
-                    Admin_Confirm_Pass = False
-                    Admin_Confirm_Gen_Pass = False
-                    Confirm = False
-                    Change_Gen_User_V = False
-                    Change_Gen_Pass_V = False
-                    Chagne_Admin_User_V = False
-                    Change_Admin_Pass_V = False
+                    Confirm - False
+                    Commandline = True
                     
                     Account_F()
                     
                 if cin == "n":
                     
-                    print("New username was not commited.")
+                    print("Changes were not commited.")
                     print("Exiting to command line.")
                     
-                    Commandline = True
-                    Login_V = False
-                    Account_Login_V = False
-                    Account_V = False
-                    Admin_Login_V = False
-                    Admin_Account_V = False
-                    Admin_Confirm = False
-                    Admin_Confirm_User = False
-                    Admin_Confirm_Gen_User = False
-                    Admin_Confirm_Pass = False
-                    Admin_Confirm_Gen_Pass = False
                     Confirm = False
-                    Change_Gen_User_V = False
-                    Change_Gen_Pass_V = False
-                    Chagne_Admin_User_V = False
-                    Change_Admin_Pass_V = False
+                    Commandline = True
                     
 def Change_Pass():
     
@@ -270,6 +243,27 @@ def Change_Pass():
                 if cin == "y":
                     
                     print("Changes were commited.")
+                    print("Note uppon program restart, the password will reset to : Password.")
+                    
+                    global Account_New_Pass
+                    Account_New_Pass = cinnp
+                    Account_Pass = Account_New_Pass
+                    
+                    Confirm = False
+                    Commandline = True
+                    
+                elif cin == "n":
+                    
+                    print("Changes were not commited")
+                    print("Exiting to commandline")
+                    
+                    Confrim = False
+                    Commandline = True
+                    
+                else:
+                    
+                    print("Error, please try again")
+                    print()
 
 def Switch_Users():
     
