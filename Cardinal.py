@@ -216,6 +216,11 @@ def Change_User():
                     
                     Confirm = False
                     Commandline = True
+
+                else:
+
+                    print("Error, please try again.")
+                    print()
                     
 def Change_Pass():
     
@@ -267,6 +272,7 @@ def Change_Pass():
 def Switch_Users():
     
     Account = False
+    Admin_Account_V = False
     Login = True
 
 def Admin_Account_F():
