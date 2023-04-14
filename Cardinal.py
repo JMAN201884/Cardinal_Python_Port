@@ -204,6 +204,7 @@ def Change_User():
                     
                     global Account_New_User
                     Account_New_User = cinnu
+                    global Account_User
                     Account_User = Account_New_User
                     
                     Confirm - False
@@ -251,6 +252,7 @@ def Change_Pass():
                     
                     global Account_New_Pass
                     Account_New_Pass = cinnp
+                    global Account_Pass
                     Account_Pass = Account_New_Pass
                     
                     Confirm = False
