@@ -45,4 +45,7 @@ Admin_Pass = "Testing"
 
 # Body
 
-
+while Commandline == True:
+    
+    cin = input("Cardinal/:")
+    print()
