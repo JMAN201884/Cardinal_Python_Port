@@ -1,14 +1,22 @@
 # Functions
 def Switch_Users():
     
-    Account = False
+    global Account_V
+    global Admin_Account_V
+    global Commandline
+    
+    Account_V = False
     Admin_Account_V = False
-    Login = True
+    Commandline = True
 
 def Calculator():
     print()
 
 def Logout():
+    
+    global Account_V
+    global Admin_Account_V
+    global Commandline
     
     Admin_Account_V = False
     Account_V = False
@@ -34,6 +42,8 @@ def Exit():
         Change_Admin_Pass_V = False
 
 # Switching Variables
+
+-
 
 Commandline = True
 Login_V = False
@@ -81,4 +91,12 @@ while Commandline == True:
     cin = input("Cardinal/:")
     print()
 
-
+    if cin == "login":
+        print()
+        
+    elif cin == "help":
+        print()
+        
+    elif cin == "exit":
+        
+        Exit()
