@@ -49,3 +49,8 @@ while Commandline == True:
     
     cin = input("Cardinal/:")
     print()
+    
+    if cin == "login":
+        print()
+        
+    elif cin == 
