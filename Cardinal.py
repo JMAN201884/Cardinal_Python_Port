@@ -114,13 +114,13 @@ while Commandline == True:
             print("3.Back")
             print()
             
-            cin = input("Cardinal/Login/ :")
+            cin = input("Cardinal/Login/ : ")
             print()
             
             if cin == "guest login":
                 
-                Login_V == False
-                Account_Login_V == True
+                Login_V = False
+                Account_Login_V = True
                 
                 while Account_Login_V == True:
                     
@@ -134,8 +134,16 @@ while Commandline == True:
                         
                         if cinp == Account_Pass:
                             
-                            Account_Login_V == False
-                            Account_V == False
+                            Account_Login_V = False
+                            Account_V = True
+                            
+                            while Account_V == True:
+                                
+                                print("hi")
+                                print()
+                                
+                                Account_V = False
+                                Login_V = True
                             
                         else:
                             
@@ -160,17 +168,26 @@ while Commandline == True:
                 
                 while Admin_Login_V == True:
                     
-                    cinu = input("Enter Admin user")
+                    cinu = input("Enter Admin user : ")
                     print()
                     
                     if cinu == Admin_User:
                         
-                        cinp = input("Enter the password")
+                        cinp = input("Enter the password : ")
                         print()
                         
                         if cinp == Admin_Pass:
                             
-                            print()
+                            Admin_Login_V = False
+                            Admin_Account_V = True
+                            
+                            while Admin_Account_V == True:
+                                
+                                print("hi")
+                                print()
+                                
+                                Admin_Account_V = False
+                                Login_V = True
                             
                         else:
                             
@@ -179,6 +196,7 @@ while Commandline == True:
                             print()
                             
                             Admin_Login_V = False
+                            Commandline = True
                             
                     
                     else:
@@ -194,7 +212,7 @@ while Commandline == True:
                 print("Exiting to commandline")
                 print()
                 
-                Loginv_V = False
+                Login_V = False
                 Commandline = True
                         
     elif cin == "help":
