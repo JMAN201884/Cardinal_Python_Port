@@ -1,13 +1,4 @@
 # Functions
-def Switch_Users():
-    
-    global Account_V
-    global Admin_Account_V
-    global Commandline
-    
-    Account_V = False
-    Admin_Account_V = False
-    Commandline = True
 
 def Logout():
     
@@ -107,13 +98,15 @@ while Commandline == True:
 
     if cin == "login":
         
-        Commandline == False
-        Login_V == True
+        Commandline = False
+        Login_V = True
         
         while Login_V == True:
             
+            print()
             print("Welcome to Cardinal")
             print("The features will be limited due to being in early development.")
+            print("Release version 0.00.00.000")
             print()
             print()
             print("1.Guest Login")
@@ -146,12 +139,64 @@ while Commandline == True:
                             
                         else:
                             
-                            print("Password or Username may be incorrect.")
+                            print("Password may be incorrect.")
                             print("Please try angain")
                             print()
                             
                             Account_Login_V == True
+                    
+                    else:
+                        
+                        print("Username may be incorrect.")
+                        print("Please try again")
+                        print()
+                        
+                        Account_Login_V == True
+                        
+            elif cin == "admin login":
+                
+                Login_V = False
+                Admin_Login_V = True
+                
+                while Admin_Login_V == True:
+                    
+                    cinu = input("Enter Admin user")
+                    print()
+                    
+                    if cinu == Admin_User:
+                        
+                        cinp = input("Enter the password")
+                        print()
+                        
+                        if cinp == Admin_Pass:
                             
+                            print()
+                            
+                        else:
+                            
+                            print("Login failed")
+                            print("Aborting to commandline")
+                            print()
+                            
+                            Admin_Login_V = False
+                            
+                    
+                    else:
+                        
+                        print("Admin username may be incorrect.")
+                        print("Please try again")
+                        print()
+                        
+                        Admin_Login_V = True
+                        
+            elif cin == "back":
+                
+                print("Exiting to commandline")
+                print()
+                
+                Loginv_V = False
+                Commandline = True
+                        
     elif cin == "help":
         print()
         
