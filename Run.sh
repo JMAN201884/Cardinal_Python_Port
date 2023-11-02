@@ -1,3 +1,3 @@
-#!/bin/bash
+!/bin/bash
 
-python3 Cardinal_Python_Port/Cardinal.py
+python3 Document/GitHub/Cardinal_Python_Port/Architecture V2/Cardinal V2.py
